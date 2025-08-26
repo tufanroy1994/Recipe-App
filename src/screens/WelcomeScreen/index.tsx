@@ -1,12 +1,23 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
+import { BaseButton, BaseWaveBackground } from '../../components';
+import { AppStrings } from '../../utils';
+import { useAppNavigation } from '../../hooks';
 import { styles } from './styles';
 
 const WelcomeScreen = () => {
+  const navigation = useAppNavigation('WelcomeScreen');
+
   return (
-    <View>
-      <Text>Welcome Screen</Text>
+    <View style={[styles.flexContainer]}>
+      <BaseWaveBackground />
+      <View style={[styles.contentContainer]}>
+        <BaseButton
+          title={AppStrings.recipes_in_one_click}
+          onPress={() => navigation.navigate('HomeScreen')}
+        />
+      </View>
     </View>
   );
 };
