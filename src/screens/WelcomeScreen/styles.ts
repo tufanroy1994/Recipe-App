@@ -8,6 +8,6 @@ export const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
     paddingHorizontal: wp(12),
-    paddingTop: Platform.OS === 'ios' ? wp(115) : wp(85),
+    paddingTop: Platform.OS === 'ios' ? wp(125) : wp(135),
   },
 });

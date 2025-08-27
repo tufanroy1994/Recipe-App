@@ -1,5 +1,17 @@
 import BaseButton from './BaseButton';
+import BaseFormInput from './BaseFormInput';
+import BaseLoader from './BaseLoader';
+import BaseRecipeCard from './BaseRecipeCard';
+import BaseSeperator from './BaseSeperator';
 import BaseText from './BaseText';
 import BaseWaveBackground from './BaseWaveBackground';
 
-export { BaseButton, BaseWaveBackground, BaseText };
+export {
+  BaseButton,
+  BaseFormInput,
+  BaseLoader,
+  BaseRecipeCard,
+  BaseSeperator,
+  BaseWaveBackground,
+  BaseText,
+};
