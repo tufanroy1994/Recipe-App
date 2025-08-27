@@ -4,6 +4,11 @@ export const AppColors = {
   PRIMARY_TEXT: '#FFFFFF',
 
   SHADOW: '#E62727',
+  INPUT_BOX: '#D9D9D9',
+  INPUT_BORDER: '#C7C9D9',
+  CARD_BACKGROUND: '#932F67',
+
+  LOADER_BACKGROUND: '#FFFFFF',
 
   TRANSPARENT: 'transparent',
 };

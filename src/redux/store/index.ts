@@ -3,7 +3,15 @@ import { persistReducer, persistStore } from 'redux-persist';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const rootReducer = combineReducers({});
+import RecipeSlice from '../slices/RecipeSlice';
+
+const reducers = combineReducers({
+  RecipeReducer: RecipeSlice,
+});
+
+const rootReducer = (state: any, action: any) => {
+  return reducers(state, action);
+};
 
 const persistedReducer = persistReducer(
   {
