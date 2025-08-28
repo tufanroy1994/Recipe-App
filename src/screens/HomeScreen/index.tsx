@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, FlatList } from 'react-native';
+import { View, FlatList, Alert } from 'react-native';
 
 import {
   BaseFormInput,
@@ -37,7 +37,7 @@ const HomeScreen = () => {
         console.log('Api data', res);
       })
       .catch(error => {
-        console.log(error?.message);
+        Alert.alert(error?.message ?? AppStrings.something_went_wrong);
       });
   };
 
@@ -52,6 +52,9 @@ const HomeScreen = () => {
       recipeImage={item.strMealThumb}
       name={item.strMeal}
       area={item.strArea}
+      onPress={() =>
+        navigation.navigate('RecipeDetailsScreen', { recipe: item })
+      }
     />
   );
 

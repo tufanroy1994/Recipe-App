@@ -9,4 +9,17 @@ export const AppStrings = {
   no_recipe_found: 'No Recipe Found',
   name: 'Name',
   area: 'Area',
+  something_went_wrong: 'Something went wrong',
+
+  // RecipeDetails Screen
+  recipe_details: 'Recipe Details',
+  recipe_name: 'Recipe Name',
+  origin: 'Origin',
+  category: 'Category',
+  instructions: 'Instructions',
+  watch_video: 'Watch Video',
+  source: 'Source',
+  ingredients_measures: 'Ingredients & Measures',
+  ingredients: 'Ingredients',
+  measures: 'Measures',
 };

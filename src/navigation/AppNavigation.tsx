@@ -6,7 +6,7 @@ import {
 } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { HomeScreen, WelcomeScreen } from '../screens';
+import { HomeScreen, RecipeDetailsScreen, WelcomeScreen } from '../screens';
 import { AppColors, navigationRef } from '../utils';
 import { RootStackParamList } from './types/RootStackTypes';
 
@@ -30,6 +30,10 @@ const AppNavigation = () => {
       >
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen
+          name="RecipeDetailsScreen"
+          component={RecipeDetailsScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
