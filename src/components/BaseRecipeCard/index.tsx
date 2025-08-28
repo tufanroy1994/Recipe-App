@@ -14,16 +14,24 @@ interface BaseRecipeCardProps {
   recipeImage?: string;
   name?: string;
   area?: string;
+  onPress?: () => void;
 }
 
 const BaseRecipeCard = ({
   recipeImage,
   name,
   area,
+  onPress,
+  style,
   ...props
 }: BaseRecipeCardProps & TouchableOpacityProps) => (
   <>
-    <TouchableOpacity {...props} style={[styles.container]}>
+    <TouchableOpacity
+      {...props}
+      style={[styles.container, style]}
+      onPress={onPress}
+      activeOpacity={0.8}
+    >
       <View style={[styles.imageContainer]}>
         {recipeImage && (
           <Image

@@ -8,7 +8,12 @@ export const AppColors = {
   INPUT_BORDER: '#C7C9D9',
   CARD_BACKGROUND: '#932F67',
 
-  LOADER_BACKGROUND: '#FFFFFF',
+  GREEN: '#06D001',
+  ORANGE: '#F97A00',
+  BLUE: '#001BB7',
+  MAROON: '#660B05',
+  YELLOW: '#FFE100',
+  PEACH: '#9A3F3F',
 
   TRANSPARENT: 'transparent',
 };
